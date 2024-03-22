@@ -1,0 +1,67 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>16a8ce6e-71e3-4786-aa5d-03d5bd198f03</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>C:\Users\cc105536\Downloads\opencv-python-4.x\opencv-python-4.x\tests\test.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>Robot</Name>
+    <RootNamespace>Robot</RootNamespace>
+    <InterpreterId>CondaEnv|CondaEnv|pincherX</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\..\tache3.py">
+      <Link>tache3.py</Link>
+    </Compile>
+    <Compile Include="..\cameraTest.py">
+      <Link>cameraTest.py</Link>
+    </Compile>
+    <Compile Include="..\coppelia_pincherx100_sujet_1.py">
+      <Link>coppelia_pincherx100_sujet_1.py</Link>
+    </Compile>
+    <Compile Include="..\pygame_joystick.py">
+      <Link>pygame_joystick.py</Link>
+    </Compile>
+    <Compile Include="..\python_avec_manette_tache2.py">
+      <Link>python_avec_manette_tache2.py</Link>
+    </Compile>
+    <Compile Include="..\tache1.py">
+      <Link>tache1.py</Link>
+    </Compile>
+    <Compile Include="C:\Users\cc105536\Documents\DynamixelPythonSDK\tests\protocol2_0\ping.py">
+      <Link>ping.py</Link>
+    </Compile>
+    <Compile Include="C:\Users\cc105536\Documents\DynamixelPythonSDK\tests\protocol2_0\read_write.py">
+      <Link>read_write.py</Link>
+    </Compile>
+    <Compile Include="..\pincher_with_camera.py">
+      <Link>test.py</Link>
+    </Compile>
+    <Compile Include="read_writeS.py" />
+    <Compile Include="read_write_tache4.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="CondaEnv|CondaEnv|pincherX" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
